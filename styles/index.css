@@ -1,0 +1,28 @@
+.circle{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.selected-indicate{
+    background-color: #584364;
+}
+
+.slide{
+    transition: all 0.2s ease-in;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.not-active-slide{
+    opacity: 0;
+    z-index: -1;
+}
+.active-slide{
+    opacity: 1;
+    display: block;
+}
