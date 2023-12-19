@@ -82,8 +82,8 @@ const Sidebar = () => {
     <div
       className={`${
         context?.isShowNav ? "translate-x-0" : "-translate-x-60"
-      } absolute   md:flex md:flex-col md:w-72 md:fixed md:inset-y-0 md:inset-x-0 
-    space-y-4 py-4 flex flex-col h-full bg-[#43344b] text-white transition`}
+      } absolute h-full md:flex md:flex-col md:w-72 md:fixed md:inset-y-0 md:inset-x-0 
+    space-y-4 py-4 flex flex-col  bg-[#43344b] text-white transition z-10 `}
     >
       <div className="px-3 py-2 flex-1">
         <div className="flex items-center justify-between mb-14">

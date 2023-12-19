@@ -59,7 +59,7 @@ const Form = ({ images, setImages, loading, setLoading }: FormProps) => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="flex justify-between flex-col lg:flex-row bg-white border border-slate-500 px-3 py-3 rounded-lg sm:font-medium md:px-6 md:py-5 "
+        className="w-full flex justify-between flex-col lg:flex-row bg-white border border-slate-500 px-3 py-3 rounded-lg sm:font-medium md:px-6 md:py-5 "
       >
         <input
           value={text}
@@ -68,13 +68,13 @@ const Form = ({ images, setImages, loading, setLoading }: FormProps) => {
           placeholder="Enter your text..."
           className="focus:outline-none w-full lg:mr-10 mb-10 lg:mb-0"
         />
-        <div className="flex items-center gap-2 sm:gap-5 justify-between ">
+        <div className="flex items-center gap-2 sm:gap-4 justify-center md:justify-between ">
           <select
             name="amount"
             id="amount"
             value={amount}
             onChange={(e) => SetAmount(e.target.value)}
-            className=" border border-slate-500  text-sm rounded-lg sm:p-3 p-1 cursor-pointer"
+            className=" border border-slate-500  text-sm rounded-lg sm:p-2 lg:p-3 p-1 cursor-pointer"
           >
             <option value="1">1 Photo</option>
             <option value="2">2 Photos</option>
@@ -85,7 +85,7 @@ const Form = ({ images, setImages, loading, setLoading }: FormProps) => {
             id="resolution"
             value={resolution}
             onChange={(e) => setResolution(e.target.value)}
-            className=" border border-slate-500  text-sm rounded-lg sm:p-3 p-1 cursor-pointer"
+            className=" border border-slate-500  text-sm rounded-lg sm:p-2 lg:p-3 p-1 cursor-pointer"
           >
             <option value="256x256">256x256</option>
             <option value="512x512">512x512</option>
@@ -93,7 +93,7 @@ const Form = ({ images, setImages, loading, setLoading }: FormProps) => {
           </select>
           <button
             type="submit"
-            className="bg-slate-500 text-white sm:px-5 sm:py-2.5 px-2 py-1 rounded-lg hover:bg-slate-700"
+            className="bg-slate-500 text-white sm:px-3 sm:py-2 lg:px-5 lg:py-3 px-2 py-1  rounded-lg hover:bg-slate-700"
             disabled={loading}
           >
             Generate

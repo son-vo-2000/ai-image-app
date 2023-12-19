@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import '../styles/index.css'
+
 interface ModalProp {
   modalImage: string;
   setModalImage: React.Dispatch<React.SetStateAction<string>>;
@@ -7,7 +9,7 @@ interface ModalProp {
 
 const Modal = ({ modalImage, setModalImage }: ModalProp) => {
   return (
-    <div className=" w-full h-full absolute flex justify-center items-center">
+    <div className={`w-full h-full absolute flex justify-center items-center  backdrop-blur-sm bg-white/30  `} >
       <div className="relative">
         <Image
           src={modalImage}

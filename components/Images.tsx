@@ -12,11 +12,11 @@ const Images = ({ images, loading, removeImage, setModalImage}: ImageProp) => {
   return (
     <>
       {loading ? (
-        <div className="w-full h-[300px] flex items-center justify-center">
-          Loading...
+        <div className="w-full h-[300px] font-semibold flex items-center justify-center">
+          Creating Image...
         </div>
       ) : (
-        <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-10 mt-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-10 mt-8">
           {images.map((image) => (
             <li
               className="rounded-t-lg flex flex-col items-center justify-center"
@@ -37,7 +37,7 @@ const Images = ({ images, loading, removeImage, setModalImage}: ImageProp) => {
                 onClick={() => {
                   removeImage(image.url);
                 }}
-                className="bg-slate-500 w-full h-full py-3 text-white cursor-pointer hover:bg-slate-700"
+                className="bg-slate-500 w-full py-3 text-white cursor-pointer hover:bg-slate-700"
               >
                 Remove
               </button>

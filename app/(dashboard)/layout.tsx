@@ -4,11 +4,9 @@ import Sidebar from "@/components/Sidebar";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-full">
-      <div className=" h-full  z-[80] bg-gray-900">
-        <Sidebar/>
-      </div>
-      <main className="md:pl-72">
+    <div className=" relative h-full ">
+      <Sidebar />
+      <main className="md:pl-72 ">
         <Navbar />
         {children}
       </main>
