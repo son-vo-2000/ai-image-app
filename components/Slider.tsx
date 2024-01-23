@@ -4,6 +4,7 @@ import React from "react";
 import "../styles/index.css";
 import { CiPause1 } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
+
 type slideProps = {
   slides: React.JSX.Element[];
 };
@@ -41,7 +42,8 @@ const Slider = ({ slides }: slideProps) => {
           </li>
         ))}
       </ul>
-
+          
+      {/* dots and pause */} 
       <div className="flex items-center justify-center gap-4">
         <div
           className="cursor-pointer"

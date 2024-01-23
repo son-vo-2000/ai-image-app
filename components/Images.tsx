@@ -5,10 +5,10 @@ interface ImageProp {
   images: { url: string }[];
   loading: boolean;
   removeImage: (index: string) => void;
-  setModalImage: React.Dispatch<React.SetStateAction<string>>
+  setModalImage: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Images = ({ images, loading, removeImage, setModalImage}: ImageProp) => {
+const Images = ({ images, loading, removeImage, setModalImage }: ImageProp) => {
   return (
     <>
       {loading ? (
@@ -23,7 +23,7 @@ const Images = ({ images, loading, removeImage, setModalImage}: ImageProp) => {
               key={image.url}
             >
               <Image
-                onClick={() =>setModalImage(image.url)}
+                onClick={() => setModalImage(image.url)}
                 alt="image"
                 width={0}
                 height={0}
