@@ -4,9 +4,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  swcMinify: true,
   images: {
     domains: [
-      "links.papareact.com",
+      "ai-image-app.vercel.app",
       "oaidalleapiprodscus.blob.core.windows.net",
     ],
   },
