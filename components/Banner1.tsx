@@ -19,7 +19,7 @@ const Banner1 = () => {
         <div>
           <Link
             className="bg-[#584364] hover:bg-[#43344b] text-white px-4 py-3 sm:text-xl rounded-lg"
-            href="/dashboard"
+            href="/image"
           >
             Get Started
           </Link>

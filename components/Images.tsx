@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface ImageProp {
   images: { url: string }[];
@@ -16,23 +15,14 @@ const Images = ({ images, loading, removeImage, setModalImage }: ImageProp) => {
           Creating Image...
         </div>
       ) : (
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-10 mt-8">
+        <ul className="flex flex-wrap gap-3 md:gap-4 mt-8 justify-center sm:justify-start">
           {images.map((image) => (
             <li
-              className="rounded-t-lg flex flex-col items-center justify-center"
+              className="rounded-t-lg flex flex-col items-center justify-center w-[200px]"
               key={image.url}
             >
-              <Image
-                onClick={() => setModalImage(image.url)}
-                alt="image"
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: "100%", height: "auto" }}
-                src={image.url}
-                priority
-                className="cursor-pointer rounded-t-lg"
-              />
+              
+              <div className="rounded-t-lg" onClick={() => setModalImage(image.url)} style={{backgroundImage: `url(${image.url})`,minHeight:'200px',width:'100%', backgroundSize:"contain", backgroundRepeat:"no-repeat",cursor:"pointer"}}></div>
               <button
                 onClick={() => {
                   removeImage(image.url);

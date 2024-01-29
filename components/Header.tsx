@@ -11,7 +11,7 @@ const Header = () => {
         </div>
 
         <Link
-          href="/dashboard"
+          href="/image"
           className="hover:bg-[#43344b] bg-[#584364] px-4 py-2 rounded-lg text-white flex items-center"
         >
           Get Started
