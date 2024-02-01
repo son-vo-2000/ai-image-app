@@ -5,10 +5,10 @@ import image2 from "../public/photo-gallery.png";
 import image3 from "../public/images.png";
 const HowItWork = () => {
   return (
-    <section className="bg-white w-full sm:py-20 py-10">
+    <section className="max-w-[1260px] m-auto sm:py-20 py-10">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center sm:gap-12 gap-6">
         <h1 className="text-2xl sm:text-4xl font-semibold ">How it works?</h1>
-        <ul className="flex flex-col justify-evenly gap-16 sm:gap-6 sm:flex-row">
+        <ul className="flex flex-col justify-between gap-16 sm:gap-6 sm:flex-row">
           <li className="flex flex-col items-center  gap-3 sm:w-1/4 p-2">
             <Image className="w-28" src={image1} alt="image-text" />
             <h3 className="font-bold text-xl">Enter your text</h3>
